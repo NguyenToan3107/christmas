@@ -29,11 +29,17 @@
             margin-bottom: 0;
             animation: glow 2s infinite alternate;
         }
+        
         p {
-            font-size: 1.5rem;
-            margin-top: 0.5rem;
-            animation: slideIn 2s;
+            font-size: 1.2rem; /* Kích thước chữ vừa đủ, dễ đọc */
+            line-height: 1.8; /* Khoảng cách giữa các dòng thoải mái */
+            margin-top: 0.5rem; /* Khoảng cách trên rộng hơn */
+            text-align: center; /* Căn giữa nội dung */
+            font-family: "Georgia", serif; /* Phông chữ mềm mại, sang trọng */
+            border-radius: 8px; /* Góc bo mềm mại */
+            animation: slideIn 2s; /* Hiệu ứng mượt mà */
         }
+        
         .images {
             margin-top: 20px;
             animation: bounce 3s infinite;
@@ -117,6 +123,18 @@
         }
 
         /* Responsive styles */
+        @media (max-width: 1980px) {
+            h1 {
+                font-size: 3rem;
+            }
+            p {
+                font-size: 1.2rem;
+            }
+            .images img {
+                width: 150px;
+                height: 200px;
+            }
+        }
         @media (max-width: 768px) {
             h1 {
                 font-size: 3rem;
@@ -126,6 +144,7 @@
             }
             .images img {
                 width: 150px;
+                height: 200px;
             }
         }
 
@@ -138,19 +157,59 @@
             }
             .images img {
                 width: 120px;
+                height: 160px;
             }
         }
+
+        @media (max-width: 430px) {
+            h1 {
+                font-size: 2.5rem;
+            }
+            p {
+                font-size: 1rem;
+            }
+            .images img {
+                width: 110px;
+                height: 150px;
+            }
+        }
+
+        @media (max-width: 400px) {
+            h1 {
+                font-size: 2.5rem;
+            }
+            p {
+                font-size: 1rem;
+            }
+            .images img {
+                width: 110px;
+                height: 150px;
+            }
+        }   
+
+        @media (max-width: 370px) {
+            h1 {
+                font-size: 2.5rem;
+            }
+            p {
+                font-size: 1rem;
+            }
+            .images img {
+                width: 100px;
+                height: 140px;
+            }
+        }   
 
     </style>
 </head>
 <body>
     <div class="container">
         <h1>Merry Christmas!</h1>
-        <p>Wishing Trang a warm and happy Christmas with your family.</p>
+        <p>Wishing Trang a warm and happy Christmas.</p>
         <div class="images">
-            <img src="assets/christmas-tree.png" alt="Christmas Image 1">
-            <img src="assets/snowman1.png" alt="Christmas Image 2">
-            <img src="assets/cozy.png" alt="Christmas Image 3">
+            <img src="assets/image1.jpg" alt="Christmas Image 1">
+            <img src="assets/image2.jpg" alt="Christmas Image 2">
+            <img src="assets/image3.jpg" alt="Christmas Image 3">
         </div>
     </div>
 
